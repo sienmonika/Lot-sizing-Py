@@ -16,3 +16,9 @@ We had to take into account that
 - thus max. 2 types of products can be produced in 1 time period.
 
 Some products from previous time period could be stored in warehouse and safisfy demand in current period - but as always in business - that comes at a cost. In this case warehousing costs would to be added. 
+
+
+Files description:
+- lotData1, lotData2, lotData3 - data sources
+- readin.Py - deals with importing above data sources in python readable format
+- lotsizing.Py - IP model using Gurobi. First variables are defined, then constraints added , objective of the model to minimise cost is set and then results are specified.
